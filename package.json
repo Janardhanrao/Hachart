@@ -4,7 +4,8 @@
   "description": "beautiful auto layout flowchart",
   "main": "index.js",
   "scripts": {
-    "test": "ava test"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build_ha_chart": "./node_modules/webpack/bin/webpack.js ./index.js ./src/setup_for_hachart.js"
   },
   "keywords": [
     "composition"
@@ -16,6 +17,7 @@
   },
   "dependencies": {
     "dagre": "^0.7.4",
-    "konva": "^1.6.3"
+    "konva": "^1.6.3",
+    "webpack": "^4.41.5"
   }
 }
